@@ -249,7 +249,7 @@ const UrduGame: React.FC<UrduGameProps> = ({ initialWords, onExit, onClearSavedW
           showSuccessAnimation: false // Reset animation flag
         }));
         setStatusMessage(null);
-      }, 1500);
+      }, 800);
     } else {
       setStatusMessage({
         type: "error",

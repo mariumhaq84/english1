@@ -81,7 +81,7 @@ const PartialWordDisplay: React.FC<PartialWordDisplayProps> = ({
       setTimeout(() => {
         onComplete(userInput.join(''));
         setIsSubmitting(false);
-      }, 1500);
+      }, 800);
     } else {
       // For incorrect answers, don't show success animation
       setHasError(true);
@@ -102,7 +102,7 @@ const PartialWordDisplay: React.FC<PartialWordDisplayProps> = ({
         if (inputRefs.current[0]) {
           inputRefs.current[0].focus();
         }
-      }, 1500);
+      }, 800);
     }
   };
 
